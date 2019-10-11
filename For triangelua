@@ -1,0 +1,21 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(int argc, char* argv[])
+{
+    int x, y, z;
+    char str[128];
+
+    printf("Emaidazu n zenbaki bat eta triangelu bat osatuko da * erabiliz: ");
+    fgets(str, 128, stdin);
+    sscanf(str, "%d", &x);
+
+    for (y = 1; y <=x; y++)
+    {
+        for (z = 1; z <= y; z++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
